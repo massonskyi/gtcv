@@ -1,0 +1,26 @@
+# C++ build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# C++ dependency directories
+/build/
+/bin/
+/lib/
+
+# Python virtual environment
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python distribution directories
+dist/
+build/
+/gtcv_library_for_python.egg-info/
