@@ -1,29 +1,22 @@
 import gtcv
-print(gtcv.GTCV_API_VERSION)
+
+# Определение функций для слотов
+def slot_function_1(data, args):
+    print(f"Slot 1 called with data: {data} and args: {args}")
+
+def slot_function_2(data, args):
+    print(f"Slot 2 called with data: {data} and args: {args}")
 
 # Создание объекта Signal
 signal = gtcv.Signal()
-
-# Инициализация сигнала
 signal.init()
 
-# # Расширение слотов
-# signal.expand_slots(10)
+# Подключение слотов к сигналу
+signal.connect_slot(slot_function_1, "Arguments for slot 1")
+signal.connect_slot(slot_function_2, "Arguments for slot 2")
 
-# Подключение слота
-def slot_function():
-    print("Слот вызван")
+# Испускание сигнала
+signal.emit_signal("Test data")
 
-signal.connect_slot(slot_function)
-
-# Вызов сигнала
-signal.emit_signal()
-
-# Отключение слота
-signal.disconnect_slot(slot_function)
-
-# Отключение всех слотов
-# signal.disconnect_all_slots()
-
-# Освобождение сигнала
+# Освобождение ресурсов
 signal.free()

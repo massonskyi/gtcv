@@ -12,7 +12,7 @@ ext_modules = [
 ]
 
 setup(
-    name='gtcv',
+    name='OpenGTCV',
     version='0.1',
     author='massonsky',
     description='This library is a python wrapper for the gtcv library',
@@ -31,5 +31,5 @@ setup(
     package_data={
         '': ['*.pyi'],
     },
-    packages=['lib.python_bindings'],
+    packages=['lib.python_bindings', 'OpenGTCV'],
 )
