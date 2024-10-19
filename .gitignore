@@ -9,7 +9,6 @@
 # C++ dependency directories
 /build/
 /bin/
-/lib/
 
 # Python virtual environment
 venv/
@@ -23,4 +22,4 @@ __pycache__/
 # Python distribution directories
 dist/
 build/
-/gtcv_library_for_python.egg-info/
+/gtcv.egg-info/
